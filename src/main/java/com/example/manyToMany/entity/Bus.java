@@ -1,15 +1,15 @@
 package com.example.manyToMany.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-@Getter
-@Setter
-@Entity
+@Data
+@NoArgsConstructor
 @Table(name = "bus")
 public class Bus {
     @Id
@@ -28,3 +28,5 @@ public class Bus {
 
 
 }
+
+// added comment in busStop to check alll the process for pull request
